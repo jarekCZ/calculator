@@ -7,25 +7,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Kalkulátor Taška</h1>
-    <h2>počet potisků je na jednu tašku</h2>
-    <label for="quantity">Počet kusů triček:</label>
-    <input type="number" id="quantity" placeholder="Zadejte počet kusů">
 
-
-    <label for="small_print_quantity">Počet velkého potisku</label>
-    <input type="number" id="small_print_quantity" placeholder="Zadejte počet velkého potisku" min="0" || max="2">
- 
-    <label for="big_print_quantity">Počet malého potisku</label>
-    <input type="number" id="big_print_quantity" placeholder="Zadejte počet malého potisku" min="0" || max="5">
-
-
-    <button onclick="calculatePrice()">Spočítat cenu</button>
-
+    <h1>Kalkulátor Tašek</h1>
+    <h2>Počet potisků na jednu tašku</h2>
+    
+    <label for="taska_quantity">Počet kusů tašek:</label>
+    <input type="number" id="taska_quantity" placeholder="Zadejte počet kusů">
+    
+    <label for="taska_small_print_quantity">Počet malého potisku:</label>
+    <input type="number" id="taska_small_print_quantity" placeholder="Zadejte počet malého potisku" min="0" max="5">
+    
+    <label for="taska_big_print_quantity">Počet velkého potisku:</label>
+    <input type="number" id="taska_big_print_quantity" placeholder="Zadejte počet velkého potisku" min="0" max="2">
+    
+    <button onclick="calculatePriceTaska()">Spočítat cenu</button>
+    
     <p id="result">Celková cena: -</p>
+    
 
 
     <button onclick="window.location.href='index.html';">Výběr Kalkulátoru</button>
-    <script src="tasky.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
